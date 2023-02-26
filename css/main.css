@@ -1,0 +1,324 @@
+:root {
+  --gray-highlighter: #555;
+  --gray-navbar: #333;
+  /*--main-bg: linear-gradient(to top, #c6c6c6, #ffffff);*/
+  /*--top-bg: linear-gradient(#F5F7FA, #B8C6DB);*/
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between; /*push them as far apart as possible*/
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.name-title {
+  /*position: fixed;*/
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+/* Style of Navbar Links */
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 1rem;
+  display: block;/*show up as larger size*/
+}
+
+.navbar-links li:hover {
+  /*color: aquamarine;*/
+  background-color: var(--gray-highlighter)
+}
+
+/* 3 Lines Menu for Mobile */
+.toggle-button {
+  position: absolute; /*force it to be on right side of screen w/out messing with flow of other elements*/
+  top: .75rem;/*gives some padding above it so its not sitting at top of screen*/
+  right: 1rem;
+  display: none;/*so it doesnt display by default*/
+  flex-direction: column;/*so all different spans line up on top of each other*/
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%; /*100 inside container only*/
+  background-color: #FFF;
+  border-radius: 10px; /*rounded corners of the bars*/
+}
+
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+
+    /* Make links ul center */
+    width: 100%;
+  }
+/*  Shows links under my name for mobile */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;/*shows on the left when it goes to mobile*/
+  }
+  .navbar-links ul {
+    /* Make links ul center */
+    width: 100%;
+
+    flex-direction: column;/*shows navbar list as a column in mobile mode*/
+  }
+  .navbar-links li {
+    text-align: center;
+  }
+
+/*  Remove padding that is too far spaced out */
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+
+/*  Active Class that determines if the menu of links should be shown or not */
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+
+/* Selection Colors */
+::selection {
+  background: #a7a8a8;
+  text-shadow: none;
+}
+.navbar > *::selection {
+  background: var(--gray-highlighter);
+  text-shadow: none;
+}
+.navbar a::selection {
+  background: var(--gray-highlighter);
+  text-shadow: none;
+}
+
+main {
+  /*background-image: linear-gradient(to bottom right, #222, #333, #555);*/
+}
+
+
+
+
+.tony {
+  display: flex;
+  flex: 1;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  /*background-image: var(--top-bg);*/
+}
+
+.tony .tony-guarino {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.tony .bold {
+  font-weight: bold;
+}
+
+
+.tony h1{
+  line-height: 0.5;
+  display: flex;
+}
+
+.table-avatar {
+  align-items: center;
+
+}
+
+.table-font {
+  font-size: 32pt;
+}
+
+
+.avatar {
+  position: static;
+  display: inline;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.tony .line {
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.31);
+  width: 15rem;
+  /*width: 30%;*/
+}
+
+
+
+
+/* HEADING 2 INSIDE: */
+.portfolio-cards h2 {
+  font-family: Garamond , sans-serif, serif;
+  text-align: center;
+}
+
+/* PORTFOLIO DESCRIPTION */
+.portfolio-cards .portfolio-desc {
+  text-align: center;
+}
+
+/* COLUMNS */
+.portfolio-cards .columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /*border: 10px solid darkred;*/
+  text-align: center;
+
+}
+.portfolio-cards .columns > * {
+
+  flex: 1;
+
+  /*flex-grow: 1;*/
+  /*flex-shrink: 1; */
+  /*flex-basis: 1; Similar to width */
+}
+
+/*Squeezes portfolio items for Mobile Devices*/
+@media (min-width: 600px) {
+  .portfolio-cards .columns {
+    flex-direction: row;
+  }
+}
+
+
+
+
+/* CARD */
+.portfolio-cards .columns .card {
+  color: #FFF;
+  padding: 1rem;
+  background-color: var(--gray-navbar);
+}
+.portfolio-cards .columns .card img{
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio-cards .columns .card img::after{
+  display: block;
+  content: ' ';
+}
+
+.about-me {
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Screen Reader */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+
+
+
+/* From 0 - 500px will be blue font */
+/* and for and */
+/* , for OR */
+/*@media all and (max-width: 500px) {*/
+/*  body {*/
+/*    color: blue;*/
+/*  }*/
+/*}*/
+
+/*@media (orientation: landscape) and (max-width: 500px) {*/
+/*  .title {*/
+/*    color: green;*/
+/*  }*/
+/*}*/
