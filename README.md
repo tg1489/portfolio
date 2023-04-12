@@ -14,3 +14,15 @@ I imagined.
 
 ### Content
 
+#####1.) Password Generator
+https://tg1489.github.io/password-generator/
+
+Clicking on the Password Generator picture
+on the main page will automatically
+send you to a new tab in the browser to the URL
+which hosts the password generator inside. Once there,
+you can click on the button which will open prompts
+asking you which criteria you would like to have before
+the password generates for you.
+
+

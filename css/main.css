@@ -214,7 +214,9 @@ main {
 
 /* PORTFOLIO DESCRIPTION */
 .portfolio-cards .portfolio-desc {
-  text-align: center;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /* COLUMNS */
@@ -222,17 +224,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /*border: 10px solid darkred;*/
+  /* border: 10px solid darkred; */
   text-align: center;
-
+  justify-content: space-evenly;
 }
+
+/*This makes it so the main portfolio app background doesn't stretch out and is only incremented slightly*/
 .portfolio-cards .columns > * {
-
-  flex: 1;
-
-  /*flex-grow: 1;*/
-  /*flex-shrink: 1; */
-  /*flex-basis: 1; Similar to width */
+  flex-grow: 0.05;
 }
 
 
@@ -266,8 +265,15 @@ main {
   content: ' ';
 }
 
+/*Main Portfolio App Image Resized to be Bigger*/
+img#pwgen {
+  width: 400px;
+  height: 400px;
+}
+
 .about-me {
   width: 50%;
+  margin-left: 1rem;
 }
 
 
