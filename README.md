@@ -1,28 +1,58 @@
-# portfolio
-The goal of this project is to showcase my personal made code that I have created over time.
-### Both desktop and mobile friendly
-This website was created using css media queries and
-javascript code in order for it to look and act seemlessly
-between any device you are viewing it on.
+# Portfolio
 
-### Was created with flexbox and tables in mind
-The majority of the website (including the portolio
-content itself) was designed with flexbox. In order
-to line up my profile name and profile picture I decided
-on using HTML table code in order for it to look the way
-I imagined.
+## Table of Contents
 
-### Content
+ • [Description](#description)
 
-#####1.) Password Generator
-https://tg1489.github.io/password-generator/
+ • [Installation](#installation)
 
-Clicking on the Password Generator picture
-on the main page will automatically
-send you to a new tab in the browser to the URL
-which hosts the password generator inside. Once there,
-you can click on the button which will open prompts
-asking you which criteria you would like to have before
-the password generates for you.
+ • [Usage](#usage)
+
+ • [Features](#features)
+
+ • [Technologies Used](#technologies-used)
+
+ • [Contributing](#contributing)
+
+ • [Questions](#questions)
+
+ • [License](#license)
 
 
+## Description
+
+This is a personal portfolio for Tony Guarino, a full-stack developer experienced in using the MERN stack. The portfolio showcases several projects and skills developed throughout his journey as a developer.
+
+## Installation
+
+No installation is required to access and view the portfolio. Simply open the portfolio website in your web browser.
+
+## Usage
+
+The portfolio serves as a showcase of Tony Guarino's skills, projects, and contact information. You can view the projects he has worked on, read a brief description of each project, and click on the links to view the live versions.
+
+## Features
+
++ Portfolio showcasing various projects
++ Project descriptions and links to live versions
++ Contact information for Tony Guarino
+
+## Technologies Used
+
+The portfolio is built using the following technologies:
+
++ HTML
++ CSS
++ JavaScript
+
+## Contributing
+
+This portfolio is a personal project, and contributions are not open to the public at this time.
+
+## Questions
+
+For any questions or inquiries, you can reach out to Tony Guarino via email at tonyguarino1489@gmail.com or call at 732-850-6458.
+
+## License
+
+This portfolio is not open-source and is protected under all applicable copyright laws. All rights reserved.

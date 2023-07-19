@@ -22,6 +22,10 @@ body {
 
 }
 
+section {
+  margin-top: 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -33,7 +37,7 @@ a:visited {
 
 .navbar {
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
